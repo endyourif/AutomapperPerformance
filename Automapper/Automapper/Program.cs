@@ -25,6 +25,8 @@ namespace Automapper
                 watch.Stop();
                 Console.WriteLine(string.Format("AutoMapper with {0}: {1}", x, watch.ElapsedMilliseconds));
 
+                watch.Reset();
+
                 watch.Start();
                 program.RunManual(x);
                 watch.Stop();
